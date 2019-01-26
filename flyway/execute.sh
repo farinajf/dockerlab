@@ -11,7 +11,7 @@ docker run --link flyway-mysql:flyway-mysql -v /home/fran/docker/dockerlab/flywa
 
 # 4.- Ejecutar flyway baseline
 docker run --link flyway-mysql:flyway-mysql \
-	-v /home/fran/docker/dockerlab/flyway/sqldir:/lyway/sql \
+	-v /home/fran/docker/dockerlab/flyway/sqldir:/flyway/sql \
         -v /home/fran/docker/dockerlab/flyway/conf:/flyway/conf \
 	my-flyway \
 	baseline
