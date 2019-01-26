@@ -1,4 +1,4 @@
 #!/bin/bash
 
-docker build -y my-flyway .
+docker build -t my-flyway .
 
