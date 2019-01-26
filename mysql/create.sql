@@ -10,6 +10,6 @@ INSERT INTO empleados (nombre, apellido, email, ciudad, pais) VALUES ('Cristina'
 INSERT INTO empleados (nombre, apellido, email, ciudad, pais) VALUES ('Juan',     'García',  'juan.garcia@domain.com',      'Vigo',    'España');
 INSERT INTO empleados (nombre, apellido, email, ciudad, pais) VALUES ('Sonia',    'Pérez',   'sonia.perez@domain.com',      'Arousa',  'España');
 
-CREATE USER 'root'@'%' IDENTIFIED BY '000000'
+CREATE USER 'root'@'%' IDENTIFIED BY '000000';
 GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' WITH GRANT OPTION;
 
