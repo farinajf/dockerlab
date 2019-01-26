@@ -16,3 +16,17 @@ docker run --link flyway-mysql:flyway-mysql \
 	my-flyway \
 	baseline
 
+# 5.- Ejecutar flyway migrate
+docker run --link flyway-mysql:flyway-mysql \
+	-v /home/fran/docker/dockerlab/flyway/sqldir:/flyway/sql \
+        -v /home/fran/docker/dockerlab/flyway/conf:/flyway/conf \
+	my-flyway \
+	migrate
+
+# 6.- Ejecutar flyway repair
+docker run --link flyway-mysql:flyway-mysql \
+	-v /home/fran/docker/dockerlab/flyway/sqldir:/flyway/sql \
+        -v /home/fran/docker/dockerlab/flyway/conf:/flyway/conf \
+	my-flyway \
+	repair
+
